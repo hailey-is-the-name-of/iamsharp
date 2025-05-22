@@ -1,11 +1,13 @@
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>iM# 대구로페이 카드 발급 매뉴얼</title>
+  <title>우리 동네는 내가 살린다 - 대구로페이 안내</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-      body {
+    body {
       margin: 0;
       font-family: 'Noto Sans KR', sans-serif;
       background-color: #f4f6fa;
@@ -16,11 +18,38 @@
       margin: auto;
       padding: 32px 20px;
     }
-    h1 {
+    h1, h2 {
       text-align: center;
+      color: #015DA9;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #333;
+    }
+    .campaign {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
       margin-bottom: 48px;
-      color: #111;
-      font-size: 1.8rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .campaign p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin: 16px 0;
+    }
+    .campaign p strong {
+      color: #015DA9;
+    }
+    hr.divider {
+      margin: 60px 0 40px;
+      border: none;
+      border-top: 2px dashed #ccc;
     }
     .step {
       margin-bottom: 60px;
@@ -68,235 +97,68 @@
       align-items: center;
       justify-content: center;
     }
+    .center-img {
+      max-width: 400px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .center-img img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+    }
+    .center-img .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
     @media (max-width: 600px) {
-      .desc {
-        font-size: 1.05rem;
-      }
       h1 {
         font-size: 1.5rem;
       }
-    }
-
-      * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Pretendard', sans-serif;
-      background: #f8fafd;
-      color: #222;
-      line-height: 1.6;
-    }
-    .topbar {
-      background: #e0f2ff;
-      text-align: left;
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-    }
-    .topbar a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    header {
-      padding: 2rem 1rem 1.5rem;
-      text-align: center;
-      background: white;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    header h1 {
-      font-size: 1.4rem;
-      color: #007acc;
-      margin-bottom: 0.5rem;
-    }
-    header h2 {
-      font-size: 1rem;
-      font-weight: 400;
-      color: #555;
-    }
-    .region-nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      padding: 1rem;
-      background: #f0faff;
-      border-top: 1px solid #e2f2ff;
-      border-bottom: 1px solid #e2f2ff;
-    }
-    .region-nav a {
-      padding: 0.3rem 0.8rem;
-      background: #ffffff;
-      border: 1px solid #b2dcff;
-      color: #007acc;
-      text-decoration: none;
-      font-size: 0.9rem;
-      border-radius: 999px;
-      transition: all 0.2s;
-    }
-    .region-nav a:hover {
-      background: #007acc;
-      color: white;
-    }
-    #map {
-      height: 60vh;
-      width: 60vw;
-      margin: 2rem auto;
-      border-radius: 20px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.08);
-    }
-    .ranking-table {
-      width: 90vw;
-      margin: 1rem auto 4rem;
-      border-collapse: collapse;
-      background: white;
-      font-size: 0.95rem;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    }
-    .ranking-table th, .ranking-table td {
-      padding: 0.8rem;
-      text-align: center;
-    }
-    .ranking-table th {
-      background: #e6f4ff;
-    }
-    .ranking-table tr:hover {
-      background: #f2fbff;
-    }
-    footer { background: #ffffff;
-      text-align: center;
-      font-size: 0.8rem;
-      color: #888;
-      padding: 2rem;
-      border-top: 1px solid #eee;
-      background: #f9fcfe;
-    }
-  
-    #kakao-share-btn{
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 999;
-      background: #FEE500;
-      border: none;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0,0,0,.25);
-      cursor: pointer;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    #kakao-share-btn img{
-      width:28px;
-      height:28px;
-    }
-
-
-    /* 푸터 */
-    footer {
-      margin-top: 40px;
-      text-align: center;
-    }
-    footer img {
-      width: 150px;
-      height: auto;
-    .campaign-banner {
-  background: linear-gradient(135deg, #e0f7fa, #ffffff);
-  padding: 40px 20px;
-  border-bottom: 1px solid #cce7f0;
-}
-
-.campaign-content {
-  max-width: 960px;
-  margin: auto;
-  color: #1a1a1a;
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-.campaign-content h2 {
-  font-size: 1.5rem;
-  color: #007acc;
-  margin-bottom: 0.8rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.campaign-content .highlight {
-  color: #ff3366;
-}
-
-.campaign-content .slogan {
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-bottom: 1.2rem;
-  color: #333;
-}
-
-.campaign-content ul {
-  margin-top: 1rem;
-  padding-left: 1.2rem;
-}
-
-.campaign-content li {
-  margin-bottom: 0.8rem;
-}
-
-.campaign-content .promise {
-  margin-top: 2rem;
-  font-weight: 500;
-  color: #004c80;
-  background: #f0f8ff;
-  padding: 1rem;
-  border-radius: 12px;
-  border: 1px solid #cce6ff;
-}
-
-    
+      .desc {
+        font-size: 1.05rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="topbar">
-<a href="https://bluenew.life">← 메인페이지로 돌아가기</a>
-</div>
-
-
   <div class="container">
-    <h1>iM# 대구로페이 카드 발급 매뉴얼</h1>
-<!-- 지역화폐 캠페인 배너 -->
-<section class="campaign-banner">
-  <div class="campaign-content">
-    <h2>우리 동네는 내가 살린다! <span class="highlight">지역화폐 사용 챌린지</span></h2>
-    <p class="slogan">“이재명의 약속, 지역경제의 숨통! 지역화폐로 응원하자”</p>
-    <p>
-      지금 우리 골목의 식당, 카페, 가게, 시장…<br>
-      코로나와 경기 침체로 숨이 턱 막힌 우리 이웃들의 삶.<br>
-      그 숨통을 틔워줄 힘, <strong>지역화폐 대구로Pay</strong>에서 시작됩니다.
-    </p>
-    <p>
-      ‘우리 동네는 내가 살린다!’는 단순한 캠페인이 아닙니다.<br>
-      이재명 후보의 지역경제 살리기 공약을 생활 속에서 실천하는<br>
-      <strong>시민 참여형 운동</strong>입니다.
-    </p>
-    <ul>
-      <li><strong>✅ 대구로Pay로 결제하면</strong><br>
-        – 지역 가게 매출은 늘고<br>
-        – 시민은 캐시백 혜택을 받고<br>
-        – 지역 돈이 지역에 도는 착한 소비가 됩니다.
-      </li>
-      <li>✅ 골목상권과 전통시장에 힘을 실어주고</li>
-      <li>✅ 소상공인의 삶과 자존심을 지키는 실질적 연대이자 응원입니다.</li>
-    </ul>
-    <p class="promise">
-      <strong>이재명은 약속했습니다.</strong><br>
+    <!-- 🎯 캠페인 소개 -->
+    <div class="campaign">
+      <h1>우리 동네는 내가 살린다!</h1>
+      <h2>지역화폐 사용 챌린지</h2>
+
+      <p><strong>🎯 캠페인 취지 설명</strong><br>
+      “이재명의 약속, 지역경제의 숨통! 지역화폐로 응원하자”</p>
+
+      <p>지금 우리 골목의 식당, 카페, 가게, 시장…<br>
+      코로나와 경기 침체로 숨이 턱 막힌 이웃들의 삶.<br>
+      그 숨통을 틔워줄 힘, <strong>지역화폐 대구로Pay</strong>에서 시작됩니다.</p>
+
+      <p><strong>‘우리 동네는 내가 살린다!’</strong>는 단순한 캠페인이 아닙니다.<br>
+      <strong>이재명 후보의 지역경제 살리기 공약</strong>을 생활 속에서 실천하는<br>
+      <strong>시민 참여형 운동</strong>입니다.</p>
+
+      <p><strong>✅ 대구로Pay로 결제하면</strong><br>
+      – 지역 가게 매출은 늘고,<br>
+      – 시민은 캐시백 혜택을 받고,<br>
+      – 지역 돈이 지역에 도는 착한 소비가 됩니다.</p>
+
+      <p><strong>✅ 골목상권과 전통시장에 힘을 실어주고,</strong><br>
+      ✅ 소상공인의 삶과 자존심을 지키는 실질적 연대이자 응원입니다.</p>
+
+      <p><strong>이재명은 약속했습니다.</strong><br>
       “지역화폐를 더 강하게, 더 넓게, 더 오래 가게 하겠다.”<br>
-      지역화폐가 지역경제의 숨통이 되도록 <strong>법과 예산으로 뒷받침</strong>하겠습니다.
-    </p>
-  </div>
-</section>
-    <!-- STEP 1 -->
+      <strong>지역화폐가 지역경제의 숨통</strong>이 되도록 법과 예산으로 뒷받침하겠습니다.</p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 📲 여기부터 가입법/매뉴얼 → 앞서 만든 전체 코드 삽입 -->
+    <!-- (중복 방지를 위해 여기에 이전 메시지에서 제공한 "가입법" html 코드 삽입) -->
+    <!-- 이미 위에서 완성된 코드 있으니 형님이 붙여넣기만 하면 됨 -->
+  <!-- STEP 1 -->
     <div class="step">
       <div class="desc">구글 플레이스토어나 애플 앱스토어에서 iM#(아임샾)어플을 설치하고 가입해주세요.</div>
       <div class="img-grid">
@@ -388,10 +250,13 @@
       </div>
     </div>
   </div>
-    <footer>
+  </div>
+
+      <footer>
     <a href="https://theminjoodaegu.co.kr/" target="_blank">
       <img src="150_png_dgsd_logo.png" alt="더불어민주당 대구광역시당 로고">
     </a>
   </footer>
 </body>
 </html>
+
